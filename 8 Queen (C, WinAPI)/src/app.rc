@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAIN                BITMAP                  "res\\toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAIN                ICON                    "res\\app.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Method"
+    BEGIN
+        MENUITEM "&First\tHome",                ID_METHOD_FIRST
+        MENUITEM "&Prev\tPgUp",                 ID_METHOD_PREV
+        MENUITEM "&Next\tPgDn",                 ID_METHOD_NEXT
+        MENUITEM "&Last\tEnd",                  ID_METHOD_LAST
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options...",                 ID_TOOLS_OPTION
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About 8 Queen...",           ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAIN ACCELERATORS 
+BEGIN
+    VK_F1,          ID_HELP_ABOUT,          VIRTKEY, NOINVERT
+    VK_HOME,        ID_METHOD_FIRST,        VIRTKEY, NOINVERT
+    VK_END,         ID_METHOD_LAST,         VIRTKEY, NOINVERT
+    VK_NEXT,        ID_METHOD_NEXT,         VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_METHOD_PREV,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 220, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 8 Queen"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAIN,IDC_STATIC,13,14,20,20
+    LTEXT           "8 Queen 1.0",IDC_STATIC,49,15,41,8,SS_NOPREFIX
+    LTEXT           "© 2006.  By Tolken Ahmetolla.",IDC_STATIC,49,35,99,8
+    DEFPUSHBUTTON   "OK",IDOK,160,10,50,14,WS_GROUP
+END
+
+IDD_OPTION DIALOGEX 0, 0, 154, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Pick an area and choose color",IDC_STATIC,7,7,140,99,WS_GROUP
+    CONTROL         "",IDC_STA_PREVIEW,"Static",SS_GRAYRECT | SS_NOTIFY,15,21,124,61,WS_EX_CLIENTEDGE
+    CONTROL         "Use &window color for background",IDC_CHK_BACKGROUND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,89,122,10
+    DEFPUSHBUTTON   "OK",IDOK,43,113,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,113,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Tolken"
+            VALUE "FileDescription", "8 Queen Application"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "8Queen.exe"
+            VALUE "LegalCopyright", "© 2006.  By Tolken Ahmetolla."
+            VALUE "OriginalFilename", "8Queen.exe"
+            VALUE "ProductName", "8 Queen"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAIN                "8 Queen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP_ABOUT           "About"
+    ID_METHOD_FIRST         "First"
+    ID_METHOD_PREV          "Prev"
+    ID_METHOD_NEXT          "Next"
+    ID_METHOD_LAST          "Last"
+    ID_TOOLS_OPTION         "Options"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

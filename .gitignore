@@ -1,0 +1,47 @@
+
+# intermediate files
+bin/
+lib/
+int/
+output/
+input/
+.vs/
+
+# Build artifacts
+*.lib
+*.dll
+*.pdb
+*.exe
+*.obj
+*.o
+*.so
+*.dylib
+*.ilk
+*.exp
+*.idb
+*.suo
+*.user
+*.ncb
+*.sdf
+*.opensdf
+Debug/
+Release/
+x64/
+ipch/
+.vs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+*.log
+
+# Workspace files
+*.code-workspace

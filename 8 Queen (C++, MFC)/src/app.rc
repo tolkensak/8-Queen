@@ -1,0 +1,220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include "".\\app.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 225, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About 8 Queen"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            "",IDC_STA_PIECE_ICON,15,12,20,20
+    CTEXT           "",IDC_STA_PIECE_TEXT,15,39,21,8,NOT WS_GROUP
+    LTEXT           "8 Queen 1.0",IDC_STATIC,56,15,40,8,SS_NOPREFIX
+    LTEXT           "© 2000.  By Tolken Ahmetolla.",IDC_STATIC,56,32,98,8
+    DEFPUSHBUTTON   "OK",IDOK,168,11,45,14
+END
+
+IDD_MAIN DIALOGEX 0, 0, 372, 263
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "8 Queen"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         400,IDC_STA_BOARD,"Static",SS_BITMAP | WS_TABSTOP,7,7,271,250,WS_EX_DLGMODALFRAME
+    CONTROL         401,IDC_STA_EYE,"Static",SS_BITMAP | SS_NOTIFY,325,21,20,18
+    LTEXT           "Method Count",IDC_STATIC,310,72,46,8,NOT WS_GROUP
+    CTEXT           "",IDC_STA_COUNT,310,84,50,8,NOT WS_GROUP
+    LTEXT           "Method &Order",IDC_STATIC,310,106,44,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDT_ORDER,310,117,50,14,ES_CENTER | ES_AUTOHSCROLL | ES_NOHIDESEL
+    CONTROL         "",IDC_SPN_ORDER,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,349,135,11,14
+    PUSHBUTTON      "&Close",IDC_BTN_CLOSE,310,212,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Tolken"
+            VALUE "FileDescription", "8 Queen Application"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "8queen.exe"
+            VALUE "LegalCopyright", "© 2000.  By Tolken Ahmetolla."
+            VALUE "LegalTrademarks", " "
+            VALUE "OriginalFilename", "8queen.exe"
+            VALUE "ProductName", "8 Queen"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_KING                ICON                    "res\\King.ico"
+IDI_QUEEN               ICON                    "res\\Queen.ico"
+IDI_ROOK                ICON                    "res\\Rook.ico"
+IDI_BISHOP              ICON                    "res\\Bishop.ico"
+IDI_KNIGHT              ICON                    "res\\Knight.ico"
+IDI_PAWN                ICON                    "res\\Pawn.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BOARD               BITMAP                  "res\\Board.bmp"
+IDB_EYE_OPEN            BITMAP                  "res\\EyeOpen.bmp"
+IDB_EYE_CLOSE           BITMAP                  "res\\EyeClose.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUT               "&About 8 Queen..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include ".\app.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
