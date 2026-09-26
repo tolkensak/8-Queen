@@ -6,7 +6,7 @@ The program finds all (92) solutions to this problem and displays them visually.
 
 ## MFC Version
 
-Created in 2000, using C++, MFC
+Created in 2000 using C++ and MFC
 
 **Screenshot**
 
@@ -15,7 +15,7 @@ Created in 2000, using C++, MFC
 ## C Version
 
 
-Created in 2006, using C, Windows API
+Created in 2006 using C and Windows API
 
 **Screenshot**
 
