@@ -1,4 +1,4 @@
-# <img src="appicon.png" alt="8Queen" width="26"> 8 Queen
+# <img src="icon.png" alt="8Queen" width="28"> 8 Queen
 
 Eight queens problem in mathematics.
 The task is to place 8 queens on the chessboard without them attacking each other.
