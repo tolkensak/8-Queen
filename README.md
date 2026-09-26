@@ -4,10 +4,19 @@ Eight queens problem in mathematics.
 The task is to place 8 queens on the chessboard without them attacking each other.
 The program finds all (92) solutions to this problem and displays them visually.
 
-created in 2006
+## MFC Version
 
-Teck stack: C, Windows API
+Created in 2000, using C++, MFC
 
 **Screenshot**
 
-![Screenshot](screenshot.png "8 Queen")
+![Screenshot: 8Queen (MFC)](screenshots/MFC-version.png "8Queen (MFC)")
+
+## C Version
+
+
+Created in 2006, using C, Windows API
+
+**Screenshot**
+
+![Screenshot: 8Queen (C)](screenshots/C-version.png "8Queen (C)")
